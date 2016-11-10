@@ -1,0 +1,42 @@
+
+<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="webForms._Default" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div class="container">
+        <h3>The Wasserman Trading Floor in the Subotnick Financial Services Center</h3>
+        <!--Create an email link button
+            Create a print this page button-->
+        <div class="jumbotron">Image</div>
+        <div class="content">
+            The Wasserman Trading Floor in the Subotnick Financial Services Center is one of the largest and most technologically advanced educational facilities of its kind with 55 workstations and dozens of professional financial software tools. The Center provides experiential learning opportunities to Baruch College students in economics, finance, journalism, and technology disciplines using professional market data systems and analytic software.
+            <a href="http://sfsccal.baruch.cuny.edu/scripts/webevent.pl?cmd=opencal&cal=cal1&" target="_blank">Wasserman Trading Floor Calendar</a>
+            <div class="workshop-box">
+                <a href="#">Sign up for Trading Floor Workshops</a> (for Baruch students, faculty, and staff only.)
+                <br />
+                <br />
+                Before attending any workshop, please print and review the tutorial materials available on Blackboard. Instructions can be found <a hre="#">here</a>.
+            </div>
+            <br />
+            Fall Semester 2016 Hours:
+            <br />
+            Unless otherwise noted on calendar:
+            <ul>
+                <li>Monday-Friday: 9:00 am - 5:45 pm</li>
+                <li>Saturday: 11:00 am - 5:00 pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+            <a href="#">Please check the SFSC calendar for holidays, classes and special events where the trading floor may be unavailable.</a>\
+            <br />
+            Related Content
+            <br />
+            <ul>
+                <li><a href="#">Articles</a> - news stories written about the Center.</li>
+                <li><a href="#">Video Clips</a> - short video clips featuring our Center taken from tv shows.</li>
+                <li><a href="#">Directions</a> to attend Trading Floor events.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</asp:Content>
