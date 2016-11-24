@@ -2,49 +2,54 @@
 <%@ Page Title="resources" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="resources.aspx.cs" Inherits="webForms.resources" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        <div class="header">Resources</div>
-        <div class="subcontent">
-            The Wasserman Trading Floor operates as a high-tech, hands-on instructional classroom. It provides students and faculty access to real-time financial data, professional research tools, and leading analytic software. At other times, the floor is a lab for use by students and faculty.
-            
-            Classes held in the center conduct closed simulations based on existing software as well as on-line data feeds from major market data sources. These systems provide a close analogue to real trading and are an effective hands-on learning tool to complement classroom finance theory. To simulate the "big picture" of a trading system, the trading floor environment includes the following:
-            <ul>
-                <li>Desktop: what you see on the broker's desktop including real-time quotes, pricing with real-time quotes, financial analysis and models, risk management, and relevant news releases.</li>
-                <li>Pre-trade applications: pre-trade strategies, order entry, credit validation.</li>
-                <li>Trade execution: order routing, order matching, legal compliance.</li>
-                <li>Trade Management: trade confirmation, management of allocation instructions, post trade aggregation, generation of settlement instruction, legal compliance.</li>
-                <li>Clearing and Settlement: links to the back office for balancing the customer's book, links to the clearing house, links to the custodian (for customers).</li>
-            </ul>
-        </div>
-        <div class="subcontent">
-            <div class="subheader">Some of the software used at Subotnick Financial Services Center:</div>
-            <ul>
-                <li>Bloomberg</li>
-                <li>Thomas One Analytics / FirstCall</li>
-                <li>FactSet</li>
-                <li>S&P CapitalIQ</li>
-                <li>TradeStation</li>
-                <li>Interactive Brokers Trader Workstation and API</li>
-                <li>Thinkorswim by TD Ameritrade</li>
-                <li>CQG Integrated Client</li>
-                <li>Palisade Decision Tools</li>
-                <li>SAS Eterprise Miner</li>
-                <li>Barra Aegis and Cosmos</li>
-                <li>Tableau</li>
-                <li>TraderEx</li>
-                <li>Rotman Interactive Trader</li>
-            </ul>
-        </div>
-        <div class="subcontent">
-            <div class="subheader">Additional Links of Interest:</div>
-            <ul>
-                <li><a href="#">Schedule of Trading Floor Workshops</a> offered by the Newman Library staff at Baruch Cllege (Baruch students, faculty, and staff only).</li>
-            </ul>
-        </div>
-        <div class="subcontent">
-            The Center is a major resource for financial services firms, technology vendorsm and management consultants to train and upgrade the skills of their employees.
-        </div>
-
+  <div class="container">
+    <div class="container-title">Resources</div>
+    <hr />
+    <div class="subcontainer">
+      <div class="row">
+        The Wasserman Trading Floor operates as a high-tech, hands-on instructional classroom. It provides students and faculty access to real-time financial data, professional research tools, and leading analytic software. At other times, the floor is a lab for use by students and faculty.
+      </div>
+      <div class="row"> 
+        Classes held in the center conduct closed simulations based on existing software as well as on-line data feeds from major market data sources. These systems provide a close analogue to real trading and are an effective hands-on learning tool to complement classroom finance theory. To simulate the "big picture" of a trading system, the trading floor environment includes the following:
+      </div>
+      <div class="row">
+        <ul>
+          <li>Desktop: what you see on the broker's desktop including real-time quotes, pricing with real-time quotes, financial analysis and models, risk management, and relevant news releases.</li>
+          <li>Pre-trade applications: pre-trade strategies, order entry, credit validation.</li>
+          <li>Trade execution: order routing, order matching, legal compliance.</li>
+          <li>Trade Management: trade confirmation, management of allocation instructions, post trade aggregation, generation of settlement instruction, legal compliance.</li>
+          <li>Clearing and Settlement: links to the back office for balancing the customer's book, links to the clearing house, links to the custodian (for customers).</li>
+        </ul>
+      </div>
     </div>
+    <div class="subcontainer">
+      <div class="subcontainer-title">Some of the software used at Subotnick Financial Services Center:</div>
+      <ul>
+        <li>Bloomberg</li>
+        <li>Thomas One Analytics / FirstCall</li>
+        <li>FactSet</li>
+        <li>S&P CapitalIQ</li>
+        <li>TradeStation</li>
+        <li>Interactive Brokers Trader Workstation and API</li>
+        <li>Thinkorswim by TD Ameritrade</li>
+        <li>CQG Integrated Client</li>
+        <li>Palisade Decision Tools</li>
+        <li>SAS Eterprise Miner</li>
+        <li>Barra Aegis and Cosmos</li>
+        <li>Tableau</li>
+        <li>TraderEx</li>
+        <li>Rotman Interactive Trader</li>
+      </ul>
+    </div>
+    <div class="subcontainer">
+      <div class="subcontainer-title">Additional Links of Interest:</div>
+      <ul>
+        <li><a href="#">Schedule of Trading Floor Workshops</a> offered by the Newman Library staff at Baruch Cllege (Baruch students, faculty, and staff only).</li>
+      </ul>
+    </div>
+    <div class="subcontainer">
+       The Center is a major resource for financial services firms, technology vendorsm and management consultants to train and upgrade the skills of their employees.
+    </div>
+  </div>
 
 </asp:Content>

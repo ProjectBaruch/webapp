@@ -1,23 +1,23 @@
 <%@ Page Title="support" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="support.aspx.cs" Inherits="webForms.support" %>
    
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-           <h4>Support</h4>
-        <br/>
-        <p>Financial support for the Center comes from Stuart Subotnick ('62), Vice Chairman and Chief Executive Officer of Metromedia International Group, Inc., and Bert W. ('54) and Sandra ('55) Wasserman.</p>
-
-        <br/>
-
-        <p>A number of organizations also provided very generous support that enabled the SFSC to be the leading facility that it is. These included  Compaq Computer, Nortel Networks, Merrill Lynch, Gruntal & Co., Neuberger and Berman, and the New York Stock Exchange.</p>
-          <br/>
-
-        <p>As our sponsors recognize, a revolution is occurring in financial services. Changes in markets and products, the computerization of equity, security, money and derivative trading, and the globalization of finance and risk management have altered the way in which market operate. The internet provides a new channel for distribution of financial services. With overwhelming volumes of data and increasing complexity, tomorrow's financial market participants require more educational exposure to the tools and systems used to analyze markets and assess financial decisions.</p>
-        <br/>
-
-        <p> The Subotnick Financial Services Center provides Baruch students with access to professional market resources. Our students are benefiting from access to FactSet, CapitalIQ and Bloomberg market data systems, FirstCall investment research, brokerage platforms from TradeStation, Thinkorswim, Interactive Brokers and CQG, and analytic software from KX, OneTick and other vendors. Baruch students apply economic and finance theory, risk management processes, financial engineering and financial IT to gain exposure to the rapidly changing trading and investment environment.</p>
-        <br/>
-
-        <p> Using the SFSC's cutting-edge computing and network resources, Baruch faculty and staff have developed experiential learning modules in market analysis, financial modeling, trading, and information systems design and development in use by thousands of students each year.</p>
-        <br/>
-
-    </asp:Content>
+  <div class="container-title">Support</div>
+  <hr />
+  <div class="content">
+    <div class="row">
+      Financial support for the Center comes from Stuart Subotnick ('62), Vice Chairman and Chief Executive Officer of Metromedia International Group, Inc., and Bert W. ('54) and Sandra ('55) Wasserman.
+    </div>
+    <div class="row">
+      A number of organizations also provided very generous support that enabled the SFSC to be the leading facility that it is. These included  Compaq Computer, Nortel Networks, Merrill Lynch, Gruntal & Co., Neuberger and Berman, and the New York Stock Exchange.
+    </div>
+    <div class="row">
+      As our sponsors recognize, a revolution is occurring in financial services. Changes in markets and products, the computerization of equity, security, money and derivative trading, and the globalization of finance and risk management have altered the way in which market operate. The internet provides a new channel for distribution of financial services. With overwhelming volumes of data and increasing complexity, tomorrow's financial market participants require more educational exposure to the tools and systems used to analyze markets and assess financial decisions.
+    </div>
+    <div class="row">
+      The Subotnick Financial Services Center provides Baruch students with access to professional market resources. Our students are benefiting from access to FactSet, CapitalIQ and Bloomberg market data systems, FirstCall investment research, brokerage platforms from TradeStation, Thinkorswim, Interactive Brokers and CQG, and analytic software from KX, OneTick and other vendors. Baruch students apply economic and finance theory, risk management processes, financial engineering and financial IT to gain exposure to the rapidly changing trading and investment environment.
+    </div>
+    <div class="row">
+      Using the SFSC's cutting-edge computing and network resources, Baruch faculty and staff have developed experiential learning modules in market analysis, financial modeling, trading, and information systems design and development in use by thousands of students each year.
+    </div>
+  </div>
+</asp:Content>

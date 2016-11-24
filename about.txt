@@ -1,11 +1,13 @@
 <%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="webForms.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    
-    <h3>About Us</h3>
-    <p>In March 2000 the Zicklin School opened the Subotnick Financial Services Center, an exciting state-of-the-art instructional facility that integrates hands-on financial services practice into the business curriculum. The Subotnick Center is one of the few business school resource of its kind in New York and one of a handful of comparable facilities at top educational institutions nationwide. Its centerpiece is the Bert W. and Sandra Wasserman Trading Floor, a fully equipped, simulated trading environment featuring 55 high-end workstations, real-time market data feeds, and financial analytics tools. Professional market technology is used to provide experiential learning opportunities where students learn about markets and financial services - valuable experience for graduates seeking leading positions in the financial, banking, or accounting services industries. The Center also features a 60-seat seminar room and a 25-seat software development laboratory.</p>
-    <br/>
-    <h4>Support</h4>
-    <p>The Center has operated with the generous support of Stuart Subotnick ('62), Vice Chairman and Chief Executive Officer of Metromedia International Group, Inc., and Bert W. ('54) and Sandra ('55) Wasserman. Additional support was provided by Compaq Computer, Nortel Networks, Merrill Lynch, Gruntal & Co., Neuberger and Berman, and the New York Stock Exchange.</p>
-
+  <div class="container">
+    <div class="row container-title">About Us</div>
+    <hr />
+    <div class="row subcontainer">
+      In March 2000 the Zicklin School opened the Subotnick Financial Services Center, an exciting state-of-the-art instructional facility that integrates hands-on financial services practice into the business curriculum. The Subotnick Center is one of the few business school resource of its kind in New York and one of a handful of comparable facilities at top educational institutions nationwide. Its centerpiece is the Bert W. and Sandra Wasserman Trading Floor, a fully equipped, simulated trading environment featuring 55 high-end workstations, real-time market data feeds, and financial analytics tools. Professional market technology is used to provide experiential learning opportunities where students learn about markets and financial services - valuable experience for graduates seeking leading positions in the financial, banking, or accounting services industries. The Center also features a 60-seat seminar room and a 25-seat software development laboratory.
+    </div>
+    <div class="row sub-subcontainer-title"><a runat="server" href="~/support">Support</a></div>
+    <div class="row sub-subcontainer sub-subcontainer-ref">The Center has operated with the generous support of Stuart Subotnick ('62), Vice Chairman and Chief Executive Officer of Metromedia International Group, Inc., and Bert W. ('54) and Sandra ('55) Wasserman. Additional support was provided by Compaq Computer, Nortel Networks, Merrill Lynch, Gruntal & Co., Neuberger and Berman, and the New York Stock Exchange.</div>
+  </div>
 </asp:Content>

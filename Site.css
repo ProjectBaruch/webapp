@@ -1,0 +1,111 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+/**********************************************************************************/
+/* Additional css styles */
+/**********************************************************************************/
+
+/* Site Master CSS*/
+
+.panel-group {
+    margin-top:15px;
+}
+.panel-title, .panel-body {
+    font-size:12px;
+}
+.panel-title:hover {
+    color: cornflowerblue;
+}
+
+.icons {
+    float:left;
+    margin-top:15px;
+}
+.myBody {
+    margin:20px 0;
+    width:100%;
+}
+/**********************************************************************************/
+
+/* Applies to all pages CSS */
+
+.container-title {
+    font-size: 26px;
+    color:#000066;
+}
+.content {
+    font-size:14px;
+}
+
+.subcontainer, .sub-subcontainer {
+    margin:15px 0;
+}
+.subcontainer-title {
+    color:#8C001A;
+    font-weight:bold;
+}
+.sub-subcontainer-title {
+    color:steelblue;
+    font-weight:bold;
+}
+/**********************************************************************************/
+
+/* Default page CSS */
+.row {
+    margin:10px 0;
+}
+.workshop-box {
+    margin:10px 0;
+    background-color:#ffffe0 ;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+
+    padding:10px;
+}
+
+/**********************************************************************************/
+
+/* About page CSS */
+
+.sub-subcontainer-ref {
+    margin-left:20px;
+    margin-right:10px
+}
+
+/**********************************************************************************/
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}

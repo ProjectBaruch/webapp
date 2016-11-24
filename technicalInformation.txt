@@ -1,52 +1,51 @@
-
 <%@ Page Title="technicalInformation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="technicalInformation.aspx.cs" Inherits="webForms.technicalInformation" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        <div class="header">Technical Information</div>
-        <div class="subcontent">
-            The Subotnick Financial Services Center’s (SFSC) cutting edge technology provides useful teaching and experiential learning resources for many different course disciplines. Below is an overview of the different technologies within the SFSC.
-        </div>
-        <div class="subcontent">
-            <div class="subheader">Workstation and Server Infrastructure</div>
-            <ul>
-                <li>The trading floor contains 55 high-end workstations with dual monitors.</li>
-                <li>The primary operating system used is Windows 7 Professional</li>
-                <li>Click Resources for a list of software used on the trading floor</li>
-            </ul>
-        </div>
-        <div class="subcontent">
-            <div class="subheader">Network Infrastructure</div>
-            <ul>
-                <li>All areas within the Center are connected to the server room using multiple category 6e cables</li>
-                <li>Multiple Gb and 10Gb network switches provide access to market data feeds and historical market data archives.</li>
-            </ul>
-        </div>
-        <div class="subcontent">
-            <div class="subheader">Wallboard and Scrolling Ticker Displays:</div>
-            <ul>
-                <li>The Center has two Daktronic wallboards on the trading floor, as well as a scrolling ticker. A dedicated server delivers real-time market data and news information to the wallboard and overhead ticker.</li>
-            </ul>
-        </div>
-        <div class="subcontent">
-            <div class="subheader">Subotnick Servers:</div>
-            <ul>
-                <li>The Subotnick Center server room houses the networking equipment and servers required to supply data to the trading floor.</li>
-                <li>The Center also houses the <a href="#">Baruch Options Data Warehouse</a> which maintains historical equities and equity options data from the US markets.</li>
-            </ul>
-        </div>
-        <div class="sub-subcontent">
-            <div class="sub-subheader">Development Classroom:</div>
-            <ul>
-                <li>The development classroom is available for students and professors to use for hands-on courses related to software development in financial services. The development environment provides tools to design applications using client-server and web technology that can be tailored to any course. The development classroom is also used as a lab for experimental economics studies and other information systems studies.</li>
-            </ul>
-        </div>
-        <div class="sub-subcontent">
-            <div class="sub-subheader">Research Lab:</div>
-            <ul>
-                <li>The research lab machines are high speed, server quality computers commonly used for data-mining research projects. The machines are generally available for researchers carrying out advanced studies in financial markets.</li>
-            </ul>
-        </div>
-    </div>
+	<div class="container">
+		<div class="container-title">Technical Information</div>
+		<div class="subcontainer">
+			The Subotnick Financial Services Center’s (SFSC) cutting edge technology provides useful teaching and experiential learning resources for many different course disciplines. Below is an overview of the different technologies within the SFSC.
+		</div>
+		<div class="subcontainer">
+			<div class="subcontainer-title">Workstation and Server Infrastructure</div>
+			<ul>
+				<li>The trading floor contains 55 high-end workstations with dual monitors.</li>
+				<li>The primary operating system used is Windows 7 Professional</li>
+				<li>Click <a runat="server" href="~/resources">Resources</a> for a list of software used on the trading floor</li>
+			</ul>
+		</div>
+		<div class="subcontainer">
+			<div class="subcontainer-title">Network Infrastructure</div>
+			<ul>
+				<li>All areas within the Center are connected to the server room using multiple category 6e cables</li>
+				<li>Multiple Gb and 10Gb network switches provide access to market data feeds and historical market data archives.</li>
+			</ul>
+		</div>
+		<div class="subcontainer">
+			<div class="subcontainer-title">Wallboard and Scrolling Ticker Displays:</div>
+			<ul>
+				<li>The Center has two Daktronic wallboards on the trading floor, as well as a scrolling ticker. A dedicated server delivers real-time market data and news information to the wallboard and overhead ticker.</li>
+			</ul>
+		</div>
+		<div class="subcontainer">
+			<div class="subcontainer-title">Subotnick Servers:</div>
+			<ul>
+				<li>The Subotnick Center server room houses the networking equipment and servers required to supply data to the trading floor.</li>
+				<li>The Center also houses the <a href="http://optionsdata.baruch.cuny.edu/" target="_blank">Baruch Options Data Warehouse</a> which maintains historical equities and equity options data from the US markets.</li>
+			</ul>
+		</div>
+		<div class="sub-subcontainer">
+			<div class="sub-subcontainer-title">Development Classroom:</div>
+			<ul>
+				<li>The development classroom is available for students and professors to use for hands-on courses related to software development in financial services. The development environment provides tools to design applications using client-server and web technology that can be tailored to any course. The development classroom is also used as a lab for experimental economics studies and other information systems studies.</li>
+			</ul>
+		</div>
+		<div class="sub-subcontainer">
+			<div class="sub-subcontainer-title">Research Lab:</div>
+			<ul>
+				<li>The research lab machines are high speed, server quality computers commonly used for data-mining research projects. The machines are generally available for researchers carrying out advanced studies in financial markets.</li>
+			</ul>
+		</div>
+	</div>
 
 </asp:Content>
