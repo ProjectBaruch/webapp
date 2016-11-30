@@ -1,0 +1,10 @@
+CREATE PROCEDURE addNew
+    @LastName NVARCHAR(50) NULL
+
+AS   
+
+    SET NOCOUNT ON;  
+    insert into dianadb.dbo.studentRecords (LastName)
+	values (@LastName);
+
+GO 

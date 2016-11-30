@@ -1,0 +1,99 @@
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Globalization;
+
+namespace demoPhase2
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        SqlConnection connEvent = null;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_Click2(object sender, EventArgs e)
+        {
+            try
+            {
+                string connString = "Server=mssql4.gear.host;Initial Catalog=dianadb;"
+                                    + "Integrated Security = False;  User Id = dianadb;"
+                                    + "Password=" + Application["sqlPW"].ToString() +
+                                    ";MultipleActiveResultSets = True";
+
+                SqlConnection connEvent = new SqlConnection(connString);
+
+                SqlCommand comEvent = new SqlCommand("showAllRecords", connEvent);
+                comEvent.CommandType = CommandType.StoredProcedure;
+                connEvent.Open();
+
+                SqlDataReader reader = comEvent.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    resultsDiv.InnerHtml += "<p>";
+                    resultsDiv.InnerHtml += reader[1].ToString();
+                    resultsDiv.InnerHtml += "</p>";
+                }
+
+            }
+
+            catch (Exception exc)
+            {
+                Response.Write(exc.Message);
+            }
+
+            finally
+            {
+                if (connEvent != null)
+                {
+                    connEvent.Close(); // in any case close the database connection
+                }
+            }
+        }
+
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string connString2 = "Server=mssql4.gear.host;Initial Catalog=dianadb;"
+                    + "Integrated Security = False;  User Id = dianadb;"
+                    + "Password=" + Application["sqlPW"].ToString() +
+                    ";MultipleActiveResultSets = True";
+
+                SqlConnection connEvent2 = new SqlConnection(connString2);
+
+                connEvent2.Open();
+
+                SqlCommand comEvent2 = new SqlCommand("addNew", connEvent2);
+                comEvent2.CommandType = CommandType.StoredProcedure;
+                comEvent2.Parameters.AddWithValue("@LastName", txtInfo.Text);
+
+                int iInserted = comEvent2.ExecuteNonQuery();
+            }
+
+            catch (Exception exc)
+            {
+                Response.Write(exc.Message);
+            }
+
+            finally
+            {
+                if (connEvent != null)
+                {
+                    connEvent.Close(); // in any case close the database connection
+                }
+            }
+
+        }
+        
+    }
+}

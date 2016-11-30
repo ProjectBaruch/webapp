@@ -1,0 +1,6 @@
+CREATE PROCEDURE showAllRecords
+
+AS   
+
+select * from dianadb.dbo.studentRecords
+GO 
